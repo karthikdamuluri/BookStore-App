@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MatToolbarModule} from '@angular/material';
+
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
@@ -10,9 +10,10 @@ export class NavBarComponent implements OnInit {
   private loggedIn = false;
   constructor() { }
 
-  adminPage(){
+  toggleDisplay(){
     this.loggedIn = !this.loggedIn;
   }
+
   ngOnInit() {
   }
 

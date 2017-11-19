@@ -1,17 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import {MatToolbarModule} from '@angular/material';
 import { AppComponent } from './app.component';
-import {Component} from '@angular/core';
-import 'hammerjs';
-import { FormsModule } from '@angular/forms';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { routing } from './app.routing';
-import {MatButtonModule, MatCheckboxModule,MatToolbarModule,MatIconModule, MatGridListModule, MatInputModule} from '@angular/material';
 import { LoginComponent } from './components/login/login.component';
 import { LoginService } from './services/login.service';
+import { routing } from './app.routing';
 import { HttpModule } from '@angular/http';
-
+import {MatGridListModule} from '@angular/material';
+import { FormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,18 +20,18 @@ import { HttpModule } from '@angular/http';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
     MatButtonModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatGridListModule,
-    MatInputModule,
-    FormsModule,
-    HttpModule,
+    MatCheckboxModule,
     routing,
+    MatToolbarModule,
+    HttpModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    MatGridListModule,
+    MatInputModule
   ],
   providers: [
-    LoginService,
+    LoginService
   ],
   bootstrap: [AppComponent]
 })
