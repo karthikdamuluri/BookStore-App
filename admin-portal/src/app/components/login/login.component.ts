@@ -19,14 +19,22 @@ export class LoginComponent implements OnInit {
         console.log(res);
         localStorage.setItem("xAuthToken", res.json().token);
         this.loggedIn = true;
-        //location.reload();
+        location.reload();
       },
       error => {
         console.log(error);
-      }
+      },
     );
   }
 
   ngOnInit() {
+    this.loginService.checkSession().subscribe(
+      res => {
+        this.loggedIn=true;
+      },
+      error => {
+        this.loggedIn = false;
+      }
+    );
   }
 }
