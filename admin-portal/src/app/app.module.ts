@@ -5,8 +5,11 @@ import {MatToolbarModule} from '@angular/material';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { LoginComponent } from './components/login/login.component';
+
 import { AddBookService } from './services/add-book.service';
 import { LoginService } from './services/login.service';
+import { UploadImageService } from './services/upload-image.service';
+
 import { routing } from './app.routing';
 import { HttpModule } from '@angular/http';
 import {MatGridListModule} from '@angular/material';
@@ -40,7 +43,8 @@ import 'hammerjs';
   ],
   providers: [
     LoginService,
-    AddBookService
+    AddBookService,
+    UploadImageService
   ],
   bootstrap: [AppComponent]
 })
