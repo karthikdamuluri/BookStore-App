@@ -5,10 +5,16 @@ import {MatToolbarModule} from '@angular/material';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { LoginComponent } from './components/login/login.component';
+import { BookListComponent, DialogResultExampleDialog } from './components/book-list/book-list.component';
+import { ViewBookComponent } from './components/view-book/view-book.component';
 
 import { AddBookService } from './services/add-book.service';
 import { LoginService } from './services/login.service';
 import { UploadImageService } from './services/upload-image.service';
+import { GetBookListService } from './services/get-book-list.service';
+import { GetBookService } from './services/get-book.service';
+import { EditBookService } from './services/edit-book.service';
+import { RemoveBookService } from './services/remove-book.service';
 
 import { routing } from './app.routing';
 import { HttpModule } from '@angular/http';
@@ -19,13 +25,21 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AddNewBookComponent } from './components/add-new-book/add-new-book.component';
 import {MatSlideToggleModule} from '@angular/material';
 import {MatSelectModule} from '@angular/material';
+import {MatListModule} from '@angular/material';
+import {MatDialogModule} from '@angular/material';
+
 import 'hammerjs';
+import { EditBookComponent } from './components/edit-book/edit-book.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
     LoginComponent,
-    AddNewBookComponent
+    AddNewBookComponent,
+    BookListComponent,
+    ViewBookComponent,
+    EditBookComponent,
+    DialogResultExampleDialog
   ],
   imports: [
     BrowserModule,
@@ -39,13 +53,19 @@ import 'hammerjs';
     MatGridListModule,
     MatInputModule,
     MatSlideToggleModule,
-    MatSelectModule
+    MatSelectModule,
+    MatListModule,
+    MatDialogModule
   ],
   providers: [
     LoginService,
     AddBookService,
-    UploadImageService
+    UploadImageService,
+    GetBookListService,
+    GetBookService,
+    EditBookService,
+    RemoveBookService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, DialogResultExampleDialog]
 })
 export class AppModule { }
