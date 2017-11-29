@@ -1,17 +1,50 @@
 # User Stories
 
  1. As a guest user I would to search for books I like.
-
- 2. As a guest user I would like to buy books from this website
  
+ ###### Acceptance Criteria:
+    
+    Create a search bar to find books by keyword
+    
+    Create a component generes to find books by category 
+
+ 2. As a guest user I would like to buy books using a secure payment
+ 
+  ###### Acceptance Criteria:
+  
+     Create a payment page to make a transaction using credit or debit card
+     
+     Send invoice to the email
+  
  3. As a I would like to login using my social networking accounts ( gmail/facebook )
-
+ 
+  ###### Acceptance Criteria:
+  
+     User should be able to login using social media profiles 
+     
+     User should be able to login using email or personal mobile numbers
+     
  4. As a user I would like to manage my profile (change passwords/ card information/ etc.,)
-
- 5. As a user I would like to search and add books to my wishlist. 
+ 
+  ###### Acceptance Criteria:
+  
+     Create a page to manage personal profile to change passwords 
+     
+     User should be able to manage books in his wishlist 
+     
+ 5. As a user I would like to search and add books to my wishlist.
+ 
+  ###### Acceptance Criteria:
+  
+     Customer can add books to wishlist
+     
+     User should get notifications when there is a book avaliable from his wishlist
 
  6. As an administrator I would like to manage CRUD information
 
+ ###### Acceptance Criteria:
+ 
+    Admin should be able to delete/Update/add books 
 
 # MisUser Stories
 
