@@ -50,7 +50,7 @@
    
        Use challenge-response tests to prevent automated submissions of the login page
 
-
+# Mockup Diagrams:
 
 ![adminpage](https://user-images.githubusercontent.com/31106457/32411394-6e66180c-c1a7-11e7-94ca-5ac234cc0ddf.PNG)
 ![checkout](https://user-images.githubusercontent.com/31106457/32411395-6e8120b6-c1a7-11e7-8be7-7516f5060bc3.PNG)
