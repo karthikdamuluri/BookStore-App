@@ -12,12 +12,6 @@ Angular Materials and bootstrap
 git clone https://github.com/swrp/BookStore-App.git
 ```
 
- # Running the application
-  ```bash
-  
-  cd BookStore-App
-  
- ```
  
  # Getting started
  ```bash
