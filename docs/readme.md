@@ -17,38 +17,38 @@
 
 1. As a evil user I would like to use sql injection to alter data
 
-###### Mitigation:
+    ###### Mitigation:
 
-   Filter all the user input
+       Filter all the user input
    
-   Using Web Application firewall settings 
+       Using Web Application firewall settings 
    
-   Limiting database privileges by context
+       Limiting database privileges by context
    
 2. As an ethical hacker I would like to use Denial of service attack to make all resources unavailable to users
 
-###### Mitigation:
+    ###### Mitigation:
 
-   By Deploying an antivirus program and firewall into the network
+       By Deploying an antivirus program and firewall into the network
    
-   Backup database regularly
+       Backup database regularly
    
 3. As a cyber expert I would like to use phishing techniques
 
-###### Mitigation:
+    ###### Mitigation:
 
-   Frequently updating systems with latest security patches
+       Frequently updating systems with latest security patches
    
-   Deploying SPAM filters that can detect viruses, blank senders, etc.
+       Deploying SPAM filters that can detect viruses, blank senders, etc.
 
 
 4. As a malicious user I would like to Brute force the login page
 
-###### Mitigation:
+    ###### Mitigation:
 
-   Implementing account lockout policy 
+       Implementing account lockout policy 
    
-   Use challenge-response tests to prevent automated submissions of the login page
+       Use challenge-response tests to prevent automated submissions of the login page
 
 
 
