@@ -1,4 +1,4 @@
-#User Stories
+# User Stories
 
 As a guest user I would to search for books I like.
 
@@ -11,6 +11,20 @@ As a user I would like to manage my profile (change passwords/ card information/
 As a user I would like to search and add books to my wishlist. 
 
 As an administrator I would like to manage CRUD information
+
+# MisUser Stories
+
+As a evil user I would like to use sql injection to alter data
+
+###### Mitigation:
+
+   Filter all the user input
+   
+   Using Web Application firewall settings 
+   
+   Limiting database privileges by context
+
+
 
 
 ![adminpage](https://user-images.githubusercontent.com/31106457/32411394-6e66180c-c1a7-11e7-94ca-5ac234cc0ddf.PNG)
