@@ -1,10 +1,13 @@
 #User Stories
 
 As a guest user I would to search for books I like.
+
 As a guest user I would like to buy books from this website
  
 As a I would like to login using my social networking accounts ( gmail/facebook )
+
 As a user I would like to manage my profile (change passwords/ card information/ etc.,)
+
 As a user I would like to search and add books to my wishlist. 
 
 As an administrator I would like to manage CRUD information
