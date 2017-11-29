@@ -1,3 +1,15 @@
+#User Stories
+
+As a guest user I would to search for books I like.
+As a guest user I would like to buy books from this website
+ 
+As a I would like to login using my social networking accounts ( gmail/facebook )
+As a user I would like to manage my profile (change passwords/ card information/ etc.,)
+As a user I would like to search and add books to my wishlist. 
+
+As an administrator I would like to manage CRUD information
+
+
 ![adminpage](https://user-images.githubusercontent.com/31106457/32411394-6e66180c-c1a7-11e7-94ca-5ac234cc0ddf.PNG)
 ![checkout](https://user-images.githubusercontent.com/31106457/32411395-6e8120b6-c1a7-11e7-8be7-7516f5060bc3.PNG)
 ![home page](https://user-images.githubusercontent.com/31106457/32411396-6e967452-c1a7-11e7-9e25-71251d19867c.PNG)
