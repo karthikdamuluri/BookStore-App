@@ -1,9 +1,21 @@
 # BookWorm-App
 Bookworm is a common platform for all the book lovers to buy the books they are eagerly waiting for.  
 
-# Installation
+
+# Installation Requirements
 ```bash
-run MySQL Workbench
+MySQL Workbench
+Eclipse IDE to run backend services
+node js
+Angular 4
+Angular Materials and bootstrap
+```
+
+# Running the application
+```bash
+git clone https://github.com/swrp/BookStore-App.git
+cd BookStore-App
+MySQL server status running 
 run javaspring application for backend
 ng serve
 ```
