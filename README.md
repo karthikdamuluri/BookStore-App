@@ -16,10 +16,7 @@ Angular Materials and bootstrap
 git clone https://github.com/swrp/BookStore-App.git
 MySQL server status running 
 run javaspring application for backend
-```
-
-# Getting started
-```bash
+## Getting started
 > cd BookStore-App
 > ng serve
 ```
