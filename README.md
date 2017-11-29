@@ -12,14 +12,18 @@ Angular Materials and bootstrap
 ```
 
 # Running the application
-```bash
-git clone https://github.com/swrp/BookStore-App.git
-MySQL server status running 
-run javaspring application for backend
-## Getting started
-> cd BookStore-App
-> ng serve
-```
+
+    git clone https://github.com/swrp/BookStore-App.git
+
+    MySQL server status running 
+    
+    run javaspring application for backend
+    
+    ## Getting started
+      
+      > cd BookStore-App
+      
+      > ng serve
 
 # License
 MIT License
