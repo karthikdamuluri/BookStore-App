@@ -1,20 +1,21 @@
 # User Stories
 
-As a guest user I would to search for books I like.
+## 1. As a guest user I would to search for books I like.
 
-As a guest user I would like to buy books from this website
+## 2. As a guest user I would like to buy books from this website
  
-As a I would like to login using my social networking accounts ( gmail/facebook )
+## 3. As a I would like to login using my social networking accounts ( gmail/facebook )
 
-As a user I would like to manage my profile (change passwords/ card information/ etc.,)
+## 4. As a user I would like to manage my profile (change passwords/ card information/ etc.,)
 
-As a user I would like to search and add books to my wishlist. 
+## 5. As a user I would like to search and add books to my wishlist. 
 
-As an administrator I would like to manage CRUD information
+## 6. As an administrator I would like to manage CRUD information
+
 
 # MisUser Stories
 
-As a evil user I would like to use sql injection to alter data
+## 1. As a evil user I would like to use sql injection to alter data
 
 ###### Mitigation:
 
@@ -23,7 +24,31 @@ As a evil user I would like to use sql injection to alter data
    Using Web Application firewall settings 
    
    Limiting database privileges by context
+   
+## 2. As an ethical hacker I would like to use Denial of service attack to make all resources unavailable to users
 
+###### Mitigation:
+
+   By Deploying an antivirus program and firewall into the network
+   
+   Backup database regularly
+   
+## 3. As a cyber expert I would like to use phishing techniques
+
+###### Mitigation:
+
+   Frequently updating systems with latest security patches
+   
+   Deploying SPAM filters that can detect viruses, blank senders, etc.
+
+
+## 4. As a malicious user I would like to Brute force the login page
+
+###### Mitigation:
+
+   Implementing account lockout policy 
+   
+   Use challenge-response tests to prevent automated submissions of the login page
 
 
 
