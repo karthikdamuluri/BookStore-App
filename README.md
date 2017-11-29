@@ -21,9 +21,9 @@ git clone https://github.com/swrp/BookStore-App.git
  
  # Getting started
  ```bash
- > MySQL server status running 
- > run javaspring application for backend
-** Open PowerShell **
+ MySQL server status running 
+ run javaspring application for backend
+Open PowerShell
  > cd BookStore-App
  > ng serve
 ```
