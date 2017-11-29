@@ -9,21 +9,24 @@ Eclipse IDE to run backend services
 node js
 Angular 4
 Angular Materials and bootstrap
+git clone https://github.com/swrp/BookStore-App.git
 ```
 
-# Running the application
-
-    git clone https://github.com/swrp/BookStore-App.git
-
-    MySQL server status running 
-    
-    run javaspring application for backend
-    
-    ## Getting started
-      
-      > cd BookStore-App
-      
-      > ng serve
+ # Running the application
+  ```bash
+  
+  cd BookStore-App
+  
+ ```
+ 
+ # Getting started
+ ```bash
+ > MySQL server status running 
+ > run javaspring application for backend
+** Open PowerShell **
+ > cd BookStore-App
+ > ng serve
+```
 
 # License
 MIT License
