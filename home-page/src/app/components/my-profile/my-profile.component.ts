@@ -19,47 +19,47 @@ import { OrderService } from '../../services/order.service';
 })
 export class MyProfileComponent implements OnInit {
 
-	private serverPath = AppConst.serverPath;
-	private dataFetched = false;
-	private loginError:boolean;
-	private loggedIn:boolean;
-	private credential = {'username':'', 'password':''};
+	public serverPath = AppConst.serverPath;
+	public dataFetched = false;
+	public loginError:boolean;
+	public loggedIn:boolean;
+	public credential = {'username':'', 'password':''};
 
-	private user: User = new User();
-	private updateSuccess: boolean;
-	private newPassword: string;
-	private incorrectPassword: boolean;
-	private currentPassword: string;
+	public user: User = new User();
+	public updateSuccess: boolean;
+	public newPassword: string;
+	public incorrectPassword: boolean;
+	public currentPassword: string;
 
-	private selectedProfileTab: number = 0;
-	private selectedBillingTab: number = 0;
-	private selectedShippingTab : number =0;
+	public selectedProfileTab: number = 0;
+	public selectedBillingTab: number = 0;
+	public selectedShippingTab : number =0;
 
-	private userPayment: UserPayment = new UserPayment();
-	private userBilling: UserBilling = new UserBilling();
-	private userPaymentList: UserPayment[] =[];
-	private defaultPaymentSet:boolean;
-	private defaultUserPaymentId: number;
-	private stateList: string[] = [];
+	public userPayment: UserPayment = new UserPayment();
+	public userBilling: UserBilling = new UserBilling();
+	public userPaymentList: UserPayment[] =[];
+	public defaultPaymentSet:boolean;
+	public defaultUserPaymentId: number;
+	public stateList: string[] = [];
 
-	private userShipping: UserShipping = new UserShipping();
-	private userShippingList: UserShipping[] = [];
+	public userShipping: UserShipping = new UserShipping();
+	public userShippingList: UserShipping[] = [];
 
-	private defaultUserShippingId: number;
-	private defaultShippingSet: boolean;
+	public defaultUserShippingId: number;
+	public defaultShippingSet: boolean;
 
-  private orderList: Order[] = [];
-  private order:Order = new Order();
-  private displayOrderDetail:boolean;
+  public orderList: Order[] = [];
+  public order:Order = new Order();
+  public displayOrderDetail:boolean;
 
 
   constructor(
-  	private loginService: LoginService,
-  	private userService: UserService,
-  	private paymentService: PaymentService,
-  	private shippingService: ShippingService,
-    private orderService: OrderService,
-  	private router: Router
+  	public loginService: LoginService,
+  	public userService: UserService,
+  	public paymentService: PaymentService,
+  	public shippingService: ShippingService,
+    public orderService: OrderService,
+  	public router: Router
   	) { }
 
   selectedShippingChange(val: number) {

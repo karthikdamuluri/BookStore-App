@@ -12,18 +12,18 @@ import { CartItem } from '../../models/cart-item';
   styleUrls: ['./shopping-cart.component.css']
 })
 export class ShoppingCartComponent implements OnInit {
-	private serverPath = AppConst.serverPath;
-	private selectedBook: Book;
-	private cartItemList: CartItem[] = [];
-	private cartItemNumber: number;
-	private shoppingCart: ShoppingCart = new ShoppingCart();
-	private cartItemUpdated: boolean;
-	private emptyCart: boolean;
-	private notEnoughStock: boolean;
+	public serverPath = AppConst.serverPath;
+	public selectedBook: Book;
+	public cartItemList: CartItem[] = [];
+	public cartItemNumber: number;
+	public shoppingCart: ShoppingCart = new ShoppingCart();
+	public cartItemUpdated: boolean;
+	public emptyCart: boolean;
+	public notEnoughStock: boolean;
 
   constructor(
-  		private router:Router,
-  		private cartService: CartService
+  		public router:Router,
+  		public cartService: CartService
   	) { }
 
   onSelect(book:Book) {

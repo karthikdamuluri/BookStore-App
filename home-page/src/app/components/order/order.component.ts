@@ -22,33 +22,33 @@ import {Order} from '../../models/order';
   styleUrls: ['./order.component.css']
 })
 export class OrderComponent implements OnInit {
-  private serverPath = AppConst.serverPath;
-  private selectedBook: Book;
-  private cartItemList: CartItem[] = [];
-  private cartItemNumber: number;
-  private shoppingCart: ShoppingCart = new ShoppingCart();
-  private cartItemUpdated:boolean;
-  private shippingAddress:ShippingAddress=new ShippingAddress();
-  private billingAddress:BillingAddress = new BillingAddress();
-  private userPayment:UserPayment = new UserPayment();
-  private userShipping:UserShipping = new UserShipping();
-  private userBilling: UserBilling = new UserBilling();
-  private userShippingList: UserShipping[] = [];
-  private userPaymentList: UserPayment[] = [];
-  private payment: Payment = new Payment();
-  private selectedTab: number;
-  private emptyShippingList: boolean = true;
-  private emptyPaymentList: boolean = true;
-  private stateList: string[] = [];
-  private shippingMethod:string;
-  private order:Order = new Order();
+  public serverPath = AppConst.serverPath;
+  public selectedBook: Book;
+  public cartItemList: CartItem[] = [];
+  public cartItemNumber: number;
+  public shoppingCart: ShoppingCart = new ShoppingCart();
+  public cartItemUpdated:boolean;
+  public shippingAddress:ShippingAddress=new ShippingAddress();
+  public billingAddress:BillingAddress = new BillingAddress();
+  public userPayment:UserPayment = new UserPayment();
+  public userShipping:UserShipping = new UserShipping();
+  public userBilling: UserBilling = new UserBilling();
+  public userShippingList: UserShipping[] = [];
+  public userPaymentList: UserPayment[] = [];
+  public payment: Payment = new Payment();
+  public selectedTab: number;
+  public emptyShippingList: boolean = true;
+  public emptyPaymentList: boolean = true;
+  public stateList: string[] = [];
+  public shippingMethod:string;
+  public order:Order = new Order();
 
   constructor(
-  	private router:Router,
-  	private cartService: CartService,
-  	private shippingService: ShippingService,
-  	private paymentService: PaymentService,
-  	private checkoutService: CheckoutService
+  	public router:Router,
+  	public cartService: CartService,
+  	public shippingService: ShippingService,
+  	public paymentService: PaymentService,
+  	public checkoutService: CheckoutService
   	) { }
 
   onSelect(book:Book) {

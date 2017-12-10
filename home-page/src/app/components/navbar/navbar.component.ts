@@ -10,14 +10,14 @@ import {Book} from '../../models/book';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  private loggedIn = false;
-  private keyword: string;
-  private bookList:Book[] =[];
+  public loggedIn = false;
+  public keyword: string;
+  public bookList:Book[] =[];
 
   constructor(
-  	private loginService: LoginService,
-    private router: Router,
-    private bookService: BookService
+  	public loginService: LoginService,
+    public router: Router,
+    public bookService: BookService
   	) { }
 
   logout() {

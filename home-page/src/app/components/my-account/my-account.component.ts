@@ -11,25 +11,25 @@ import {AppConst} from '../../constants/app-const';
 })
 export class MyAccountComponent implements OnInit {
 
-  private serverPath = AppConst.serverPath;
-  private loginError:boolean = false;
-  private loggedIn = false;
-  private credential = {'username':'', 'password':''};
+  public serverPath = AppConst.serverPath;
+  public loginError:boolean = false;
+  public loggedIn = false;
+  public credential = {'username':'', 'password':''};
 
-  private emailSent: boolean =false;
-  private usernameExists:boolean;
-  private emailExists:boolean;
-  private username:string;
-  private email:string;
+  public emailSent: boolean =false;
+  public usernameExists:boolean;
+  public emailExists:boolean;
+  public username:string;
+  public email:string;
 
-  private emailNotExists: boolean =false;
-  private forgetPasswordEmailSent: boolean;
-  private recoverEmail:string;
+  public emailNotExists: boolean =false;
+  public forgetPasswordEmailSent: boolean;
+  public recoverEmail:string;
 
   constructor(
-  	private loginService: LoginService,
-  	private userService: UserService,
-  	private router: Router
+  	public loginService: LoginService,
+  	public userService: UserService,
+  	public router: Router
   	) { }
 
   onLogin() {
