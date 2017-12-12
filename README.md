@@ -16,12 +16,10 @@ git clone https://github.com/swrp/BookStore-App.git
  # Getting started
  ```bash
  MySQL server status running 
- run javaspring application for backend
-Open PowerShell
- > cd BookStore-App
- > ng serve
+ cd bookstore: mvn spring-boot:run
+ 
+ Once the app starts runnning visit localhost:4200
 ```
-
 # License
 MIT License
 
